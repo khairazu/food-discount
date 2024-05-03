@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int porsi;
+	bool makanan_baru, minuman_baru;
+	
+	//input
+	cout << "Berapa jumlah porsi yang akan anda pesan? ";
+	cin >> porsi;
+	cout << "Apakah anda ingin mencoba dan membeli menu makanan terbaru kami? (ketik 1 untuk ya, 0 untuk tidak) : ";
+	cin >> makanan_baru;
+	cout << "Apakah anda ingin mencoba dan membeli menu minuman terbaru kami? (ketik 1 untuk ya, 0 untuk tidak) : ";
+	cin >> minuman_baru;
+	cout << endl;
+	
+	//memeriksa beberapa kondisi
+	if (porsi > 0 && (makanan_baru || minuman_baru)){
+		cout << "Selamat Anda mendapatkan diskon 20% !" << endl;
+	} else {
+		cout << "Maaf, Anda tidak memenuhi syarat untuk mendapatkan diskon." << endl;
+	}
+	return 0;
+}
